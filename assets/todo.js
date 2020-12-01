@@ -1,15 +1,3 @@
-/*
- * @author Shaumik "Dada" Daityari
- * @copyright December 2013
- */
-
-/* Some info
-Using newer versions of jQuery and jQuery UI in place of the links given in problem statement
-All data is stored in local storage
-User data is extracted from local storage and saved in variable todo.data
-Otherwise, comments are provided at appropriate places
-*/
-
 var todo = todo || {},
     data = JSON.parse(localStorage.getItem("todoData"));
 
@@ -27,7 +15,7 @@ data = data || {};
             dataAttribute: "data",
             deleteDiv: "delete-div"
         }, codes = {
-            "1" : "#pending",
+            "1" : "#upcoming",
             "2" : "#inProgress",
             "3" : "#completed"
         };
@@ -40,22 +28,6 @@ data = data || {};
         $.each(data, function (index, params) {
             generateElement(params);
         });
-
-        /*generateElement({
-            id: "123",
-            code: "1",
-            title: "asd",
-            date: "22/12/2013",
-            description: "Blah Blah"
-        });*/
-
-        /*removeElement({
-            id: "123",
-            code: "1",
-            title: "asd",
-            date: "22/12/2013",
-            description: "Blah Blah"
-        });*/
 
         // Adding drop function to each category of task
         $.each(codes, function (index, value) {

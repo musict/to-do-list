@@ -1,14 +1,13 @@
-/* nanoscrollbar */
-.nano .pane   { background: #888; }
-.nano .slider { background: #111; }
-
 body {
-    /* Override bootstrap properties */
-    background-color: #374a5d !important;
-    border: 0 !important;
+    background-color: #374a5d;
+    border: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    color: #374a5d;
 }
 
 #container{
+    text-align: center;
     margin: 0 auto;
     width: 1060px;
     min-height: 100%;
@@ -16,12 +15,6 @@ body {
     border: 0;
 }
 
-#header{
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 15px;
-    color: #fff;
-}
 
 .task-list{
     width: 250px;
@@ -34,7 +27,9 @@ body {
 }
 
 .task-list input, .task-list textarea{
+    font-family: 'Roboto Mono', monospace;
     width: 240px;
+    height: 130px;
     margin: 1px 5px;
 }
 
@@ -54,10 +49,6 @@ body {
     width: 100px;
     margin: 5px;
 
-}
-
-.todo-task > .task-header{
-    font-weight: bold;
 }
 
 .todo-task > .task-date{
@@ -81,4 +72,9 @@ h3{
     height: 75px;
     line-height: 75px;
     text-align: center;
+}
+
+
+.btn-primary{
+    background-color: #BFC8C1;
 }

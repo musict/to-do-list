@@ -1,24 +1,19 @@
 <html>
     <head>
-        <title>AngelPrime to-do List</title>
+        <title>TODO</title>
 
-        <link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="lib/jQuery/jquery.ui.min.css" />
         <link rel="stylesheet" href="assets/todo.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
     </head>
 
-    <body class="well">
+    <body>
         <div id="container">
 
-            <div id="header"> To Do List </div>
-
-            <div class="task-list task-container" id="pending">
-                <h3>Pending</h3>
-                <!--<div class="todo-task">
-                    <div class="task-header">Sample Header</div>
-                    <div class="task-date">25/06/1992</div>
-                    <div class="task-description">Lorem Ipsum Dolor Sit Amet</div>
-                </div>-->
+            <div class="task-list task-container" id="upcoming">
+                <h3>Upcoming</h3>
             </div>
 
             <div class="task-list task-container" id="inProgress">
@@ -30,24 +25,23 @@
             </div>
 
             <div class="task-list">
-                <h3>Add a task</h3>
-                <form id="todo-form">
-                    <input type="text" placeholder="Title" />
-                    <textarea placeholder="Description"></textarea>
-                    <input type="text" id="datepicker" placeholder="Due Date (dd/mm/yyyy)" />
-                    <input type="button" class="btn btn-primary" value="Add Task" onclick="todo.add();" />
-                </form>
+                <h3>New</h3>
 
-                <input type="button" class="btn btn-primary" value="Clear Data" onclick="todo.clear();" />
+                <form id="todo-form">
+                    <input type="text" placeholder="Task" />
+                    <textarea placeholder="Info"></textarea>
+                    <input type="text" id="datepicker" placeholder="Date"/>
+                    <br><br><br>
+                    <input type="button" class="btn-primary" value="Add Task" onclick="todo.add();" />
+                </form>
 
                 <div id="delete-div">
                     Drag Here to Delete
                 </div>
             </div>
 
-            <div style="clear:both;"></div>
-	          <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
-            <script type="text/javascript" src="lib/Bootstrap/bootstrap.min.js"></script>
+
+	        <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
             <script type="text/javascript" src="lib/jQuery/jquery.ui.min.js"></script>
             <script type="text/javascript" src="assets/todo.js"></script>
 
